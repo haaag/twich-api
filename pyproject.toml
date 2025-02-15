@@ -73,7 +73,7 @@ warn_unused_ignores = true
 
 [tool.ruff]
 fix = false
-line-length = 100
+line-length = 120
 show-fixes = true
 target-version = "py37"
 exclude = [".venv", ".mypy_cache", ".pytest_cache"]
