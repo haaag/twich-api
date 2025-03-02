@@ -268,6 +268,19 @@ class HelixChannels:
         response = await self._api.request_get(endpoint, params)
         return response['data']
 
+    async def users_info(self, login_ids: list[str]) -> list[dict[str, Any]]:
+        """
+        Gets information about one or more users.
+        """
+        # https://dev.twitch.tv/docs/api/reference/#get-users
+        log.debug(f'getting information about a {login_ids=}')
+        data: list[dict[str, Any]] = []
+        endpoint = URL('users')
+        for batch in utils.group_into_batches(login_ids, constants.MAX_ITEMS_PER_REQUEST):
+            response = await self._api.request_get(endpoint, {'id': batch})
+            data.extend(response.get('data', []))
+        return data
+
     async def info_ids(self, broadcaster_ids: list[str]) -> list[dict[str, Any]]:
         """
         Gets information about more channels.

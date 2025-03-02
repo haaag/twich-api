@@ -30,7 +30,7 @@ def load_envs(filepath: str | None = None) -> None:
     if not filepath:
         log.info('env: no env filepath specified')
         log.info('env: loading from .env or exported env vars')
-        load_dotenv()
+        load_dotenv(verbose=True)
         return
 
     envfilepath = Path(filepath).expanduser()
