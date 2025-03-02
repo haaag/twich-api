@@ -1,21 +1,8 @@
-# twitch-api
+<div align="center">
+  <img src="assets/twitch-logo.svg" width="50xp">
+    <h2><b>Twitch API Wrapper <sub>🚧 (WIP)</sub></b></h2>
+</div>
 
-[![PyPI - Version](https://img.shields.io/pypi/v/twitch-api.svg)](https://pypi.org/project/twitch-api)
-[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/twitch-api.svg)](https://pypi.org/project/twitch-api)
-
------
-
-## Table of Contents
-
-- [Installation](#installation)
-- [License](#license)
-
-## Installation
-
-```console
-pip install twitch-api
-```
-
-## License
-
-`twitch-api` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
+<div alig="left">
+<p>The Twitch Helix API Wrapper is a comprehensive Python library designed to simplify interactions with the Twitch API. This library provides a structured and intuitive way to access various endpoints of the Twitch API, making it easier to integrate Twitch data into your applications.</p>
+</div>
